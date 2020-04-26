@@ -8,9 +8,9 @@ Steps:
 3.	Created a Folder name as “YoloV3” . downloaded weights from the specified link and placed in yolov3 folder ‘weights”. 
 4.	Also placed yolov3-spp-ultralytics.pt in weights file inside the YoloV3 folder.
 5.	Prepared custom.data file in the strucrure given as :
-customdata  Images and Labels folders in it which has been processed and taken from annotated imageset.
-custom.names  having class name in it. Here we took class name as Chota_Bheem.
-custom.txt  as its custom data arranged in an order.
+customdata - Images and Labels folders in it which has been processed and taken from annotated imageset.
+custom.names - having class name in it. Here we took class name as Chota_Bheem.
+custom.txt - as its custom data arranged in an order.
 6.	Placed all the remaining files in YoloV3 folder such as models.py, train.py, test.py and detect.py etc..
 7.	For COCO's 80 classes, VOLOv3's output vector has 255 dimensions ( (4+1+80)*3). Now we have 1 class, so we would need to change it's architecture.
 8.	Copy the contents of 'yolov3-spp.cfg' file to a new file called 'yolov3-custom.cfg' file in the data/cfg folder.
